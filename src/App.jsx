@@ -7,19 +7,19 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <em>React is so cool!</em>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>This is an h1</h1>
+        <p>paragraph element</p>
+        <ul>
+          <li>list item 1</li>
+          <li>list item 2</li>
+          <li>list item 3</li>
+        </ul>
       </header>
     </div>
   );
 }
 
 export default App;
+
