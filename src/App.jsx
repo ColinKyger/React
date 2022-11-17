@@ -12,9 +12,9 @@ function App() {
         <h1>This is an h1</h1>
         <p>paragraph element</p>
         <ul>
-          <li>list item 1</li>
-          <li>list item 2</li>
-          <li>list item 3</li>
+          <li>list item 1 </li>
+          <li>list item 2 </li>
+          <li>list item 3 </li>
         </ul>
       </header>
     </div>
