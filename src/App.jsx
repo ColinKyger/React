@@ -1,6 +1,6 @@
 import React from 'react'
 import "./App.css"
-
+import FilmsList from "./components"
 export default class app extends React.Component {
 
   constructor(props) {
@@ -47,6 +47,7 @@ export default class app extends React.Component {
             return <li key={item + index} >{item}</li>
           })}
         </ul>
+        <FilmsList />
       </div>
     );
   }
