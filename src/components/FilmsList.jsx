@@ -1,4 +1,4 @@
-import { Component } from 'React'
+import React, { Component } from 'react';
 
 class FilmsList extends Component {
 
@@ -13,9 +13,11 @@ class FilmsList extends Component {
    getFilms() {
     fetch("https://ghibliapi.herokuapp.com/films")
     .then((resolve) => resolve.json())
-    .then((films) => this.setState({ list: films }))
-    .then(this.state.list = this.setState(films))
-    .catch((error) => {console.log("error", error)})
+    .then((films) => {console.log(films);
+      this.setState({ list: films });
+     }).catch((error) => {console.log("error", error)})
+
+    
    }
 
    componentDidMount() {
@@ -34,11 +36,4 @@ class FilmsList extends Component {
   }
 }
 
-
-
-
 export default FilmsList;
-
-// {this.state.list.map((item, index) => {
-//     return <li key={item + index} >{item}</li>
-//   })}

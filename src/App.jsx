@@ -1,6 +1,7 @@
 import React from 'react'
 import "./App.css"
-import FilmsList from "./components"
+import FilmsList from './components/FilmsList'
+
 export default class app extends React.Component {
 
   constructor(props) {
